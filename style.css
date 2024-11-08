@@ -1,0 +1,274 @@
+body {
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    display: block;
+    border-style: none;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    z-index: 1;
+}
+
+.nav-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-item {
+    position: relative;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 8rem;
+    padding-left: 1rem;
+}
+
+main h1 {
+    margin-top: 5rem;
+}
+
+.grid-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+
+.menu-container {
+    margin: 5px;
+    border-width: 5px;
+    border-color: black;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.gallery {
+    margin-bottom: 50px;
+    border-color: #4B0082;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-rows: 300px, 300px, 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    border-color: #4B0082;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+
+.grid-item1 {
+    grid-area: 1/1/2/4;
+
+
+}
+
+
+
+.grid-item3 {
+    grid-area: 3/1/4/2;
+}
+
+.grid-item4 {
+    grid-area: 2/1/4/3;
+    margin-right: 0.5rem;
+}
+
+.grid-item5 {
+    padding: 50px;
+    background-color: #07252d;
+    grid-area: 3/2/4/4;
+    text-align: center;
+}
+
+.text {
+
+    margin: 20px;
+    color: #0e3742;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    transform: rotate(-20deg);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    18%,
+    20%,
+    30%,
+    50%,
+    60%,
+    80%,
+    90%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 100px #03bcf4;
+    }
+}
+
+.aboutUs {
+    background-image: url(cesar-vergara-draw-in-your-style.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+
+}
+
+.aboutUs-text {
+    margin: 20px;
+    color: #ff69b4;
+    line-height: 1.6;
+}
+
+::marker {
+    color: aqua;
+    transition: color 1s;
+}
+
+li:hover::marker {
+    color: #4B0082;
+}
+
+.contactUs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    width: 100%;
+    margin: 2rem;
+
+}
+
+textarea {
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -1000%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu .active {
+        left: 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+
+}

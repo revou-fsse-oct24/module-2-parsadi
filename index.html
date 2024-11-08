@@ -1,101 +1,52 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/_rEaNyCz)
-# NAVBAR
-sticky
-```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
     <header>
         <img src="flagpack--mx.png" alt="Mexican" class="logo">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
-```
-
-Media query 
-```css
- .hamburger {
-        display: block;
-
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -1000%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: black;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-
-
-    }
-
-    .nav-item {
-        margin: 16px 0;
-    }
-
-    .nav-menu .active {
-        left: 0;
-    }
-
-```
-
-# MENU CONTENT
-this is the content
-```html
-<h1>Our Menu</h1>
-        <div class="flex-container container">
-            <div class="menu-container">
+    <main>
+        <h1>Our Menu</h1>
+        <div class="grid-container container">
+            <div class="menu-container item1">
                 <img src="burito_carne_asada.jpeg" alt="Burito Carne Asada">
                 <h3>Burito Carne Asada</h3>
                 <h5>Burito filled with Mexican authentuic grilled meat</h5>
             </div>
-            <div class="menu-container">
+            <div class="menu-container item2">
                 <img src="burito_pollo_chille.jpg" alt="Burito Pollo con Chille">
                 <h3>Burito Pollo con Chille</h3>
                 <h5>Burito filled with spicy chicken</h5>
             </div>
-            <div class="menu-container">
+            <div class="menu-container item3">
                 <img src="burger.jpg" alt="Burger">
                 <h3>Burger</h3>
                 <h5>Special burger by our restaurant that will crave your gut</h5>
             </div>
         </div>
-```
-
-Media quey for Content 
-```css
- .grid-container {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-```
-# OUR GALLERY
-```html
-    <div class="gallery">
+        <div class="gallery">
             <h1>Our Gallery</h1>
             <div class="grid-gallery">
                 <picture class="grid-item1 child">
@@ -112,10 +63,7 @@ Media quey for Content
                 </div>
             </div>
         </div>
-```
-# ABOUT US
-```html
-    <div class="aboutUs container">
+        <div class="aboutUs container">
             <h1 class="aboutUs-text">About Us</h1>
             <h3 class="aboutUs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, atque!
                 Porro magnam odio
@@ -128,11 +76,7 @@ Media quey for Content
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quasi!</li>
             </ul>
         </div>
-```
-
-# HOW TO REACH US
-```html
-    <div class="container">
+        <div class="container">
             <h3>Contact Us</h3>
             <form action="">
                 <div class="contactUs">
@@ -144,19 +88,13 @@ Media quey for Content
 
             </form>
         </div>
-```
-Pictures inside the content :
-
-![Burito Carne Asada](burito_carne_asada.jpeg)
-![Burito Pollo con Chille](burito_pollo_chille.jpg)
-![Burger](burger.jpg )
-<br>
-<br>
-<br>
-<br>
-<br>
+    </main>
+    <footer>
+        <p class="copyright">copyright 2024 by Saguaro Express</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
 
 
-
-
+</html>
