@@ -156,6 +156,9 @@ Pictures inside the content :
 <br>
 <br>
 
+# Deployment link :
+https://revou-fsse-oct24.github.io/module-2-parsadi/
+
 
 
 
