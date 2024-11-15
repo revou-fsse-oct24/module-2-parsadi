@@ -156,10 +156,57 @@ Pictures inside the content :
 <br>
 <br>
 
-# Deployment link :
-https://revou-fsse-oct24.github.io/module-2-parsadi/
+# How to deploy 
+
+First, you need to signing up in Vercel or Netlify. I choosed Vercel since there was an issue while signing up via github.
+
+![Step 1](readme.assets/step1.png)
+
+Second, add the domain (that previously been bought) to the project. 
+note: the domain purchasement steps will be shown after this section
+
+![step 2](readme.assets/step2.png)
+
+Third,Then here it comes, the domain that has linked to your intention project.
+
+![step 3](readme.assets/step3.png)
+
+# How to buy domain
+
+First,Type yout intended domain name, then choose your domain extension (I bought this domain at Niagahoster)
+
+![step 1](readme.assets/domain_1.png)
+
+Then,Purchase that and you are set with your own domain. Congratulatiuon.
+
+![step 2](readme.assets/domain_2.png)
+
+Third, set the DNS. Go back to your Vercel account, then click "add" on the red circle
+
+![step 3](readme.assets/domain_3.png)
+
+Then,add your domain to the project from your gitHub
 
 
+![step 4](readme.assets/domain_4.png)
+
+Add your domain
+
+
+![step 5](readme.assets/domain_5.png)
+
+Then, go to "settings", then click "domains" at the left side-bar, then copy the value as depicted on the picture above.
+
+
+![step 6](readme.assets/domain_6.png)
+
+Finally,Copy that on your "Niagahoster" and you are all set. Congratulation, you are just launched your first website.
+
+![step 7](readme.assets/domain_7.png)
+
+# Deployment link
+
+https://www.saguarotaco.shop/
 
 
 
